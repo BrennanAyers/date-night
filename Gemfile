@@ -1,0 +1,8 @@
+gem 'rspec-rails'
+gem 'rspec-pride'
+gem 'capybara'
+gem 'launchy'
+gem 'pry'
+gem 'simplecov'
+gem 'shoulda-matchers'
+gem 'activesupport'
