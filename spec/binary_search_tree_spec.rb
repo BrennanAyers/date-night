@@ -20,5 +20,12 @@ describe BinarySearchTree do
 
       expect(@tree.head.head).to eq({"Bill & Ted's Excellent Adventure" => 61})
     end
+
+    it 'should be able to insert two nodes' do
+      expect(@tree.insert(61, "Bill & Ted's Excellent Adventure")).to eq(0)
+      expect(@tree.insert(16, "Johnny English")).to eq(1)
+
+      expect(@tree.left.head).to eq({"Johnny English" => 16})
+    end
   end
 end
