@@ -1,9 +1,14 @@
 class Node
-  attr_reader :head, :left, :right
-  
+  attr_reader :key, :value, :left, :right
+
   def initialize(value, key)
-    @head = {key => value}
+    @key = key
+    @value = value
     @left = nil
     @right = nil
+  end
+
+  def insert(value, key)
+
   end
 end
