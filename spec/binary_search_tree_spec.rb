@@ -9,4 +9,16 @@ describe BinarySearchTree do
     expect(tree.left).to be nil
     expect(tree.right).to be nil
   end
+
+  context 'methods' do
+    before :each do
+      @tree = BinarySearchTree.new
+    end
+
+    it 'should be able to insert a new node' do
+      expect(@tree.insert(61, "Bill & Ted's Excellent Adventure")).to eq(0)
+
+      expect(@tree.key).to eq({"Bill & Ted's Excellent Adventure": 61})
+    end
+  end
 end
