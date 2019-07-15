@@ -5,7 +5,7 @@ describe BinarySearchTree do
   it 'should initialize without a key' do
     tree = BinarySearchTree.new
 
-    expect(tree.key).to be nil
+    expect(tree.head).to be nil
     expect(tree.left).to be nil
     expect(tree.right).to be nil
   end
@@ -18,7 +18,7 @@ describe BinarySearchTree do
     it 'should be able to insert a new node' do
       expect(@tree.insert(61, "Bill & Ted's Excellent Adventure")).to eq(0)
 
-      expect(@tree.key).to eq({"Bill & Ted's Excellent Adventure": 61})
+      expect(@tree.head.head).to eq({"Bill & Ted's Excellent Adventure" => 61})
     end
   end
 end
